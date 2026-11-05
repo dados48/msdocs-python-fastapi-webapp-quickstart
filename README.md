@@ -1,39 +1,18 @@
----
-page_type: sample
-description: "A minimal sample app that can be used to demonstrate deploying FastAPI apps to Azure App Service."
-languages:
-- python
-products:
-- azure
-- azure-app-service
----
+# Dados48 — msdocs-python-fastapi-webapp-quickstart
 
-# Deploy a Python (FastAPI) web app to Azure App Service - Sample Application
+## Referência do projeto
 
-This is the sample FastAPI application for the Azure Quickstart [Deploy a Python (Django, Flask or FastAPI) web app to Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/quickstart-python). For instructions on how to create the Azure resources and deploy the application to Azure, refer to the Quickstart article.
+A arquitetura e as implementações do Dados48 são descritas no [Relatório técnico](https://github.com/dados48/entrega/blob/main/Dados48-Relatorio-Tecnico.pdf), referência para as decisões, os resultados e os limites da solução. Este README apenas aponta para essa documentação.
 
-Sample applications are available for the other frameworks here:
-- Django [https://github.com/Azure-Samples/msdocs-python-django-webapp-quickstart](https://github.com/Azure-Samples/msdocs-python-django-webapp-quickstart)
-- Flask [https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart](https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart)
+[![Infraestrutura do Dados48](https://github.com/dados48/infraestrutura/blob/main/diagrama/infra-completa.png?raw=true)](https://github.com/dados48/infraestrutura/blob/main/diagrama/infra-completa.pdf)
 
-If you need an Azure account, you can [create one for free](https://azure.microsoft.com/en-us/free/).
+## Componentes descritos no Relatório
 
-## Local Testing
+- [frontend](https://github.com/dados48/frontend): aplicativo Android e web.
+- [api-back-end](https://github.com/dados48/api-back-end): API de negócio em PHP; [Swagger / OpenAPI](https://github.com/dados48/api-back-end/blob/main/swagger.json).
+- [api-python](https://github.com/dados48/api-python): serviço de extração de laudos.
 
-To try the application on your local machine:
+## Documentação
 
-### Install the requirements
-
-`pip install -r requirements.txt`
-
-### Start the application
-
-`uvicorn main:app --reload`
-
-### Example call
-
-http://127.0.0.1:8000/
-
-## Next Steps
-
-To learn more about FastAPI, see [FastAPI](https://fastapi.tiangolo.com/).
+- [Entrega](https://github.com/dados48/entrega): Manual do sistema, Manual de uso, Manual técnico e operacional e Relatório técnico.
+- [Infraestrutura](https://github.com/dados48/infraestrutura): arquivos e diagramas do ambiente descrito nos documentos.
